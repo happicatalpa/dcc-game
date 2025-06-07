@@ -28,8 +28,6 @@ public class InteractPrompt : MonoBehaviour
             interactPrompt.SetActive(false);
         }
 
-        Debug.Log("Distance: " + distance);
-
     }
 
     private void getObjectInteraction ()
