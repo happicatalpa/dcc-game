@@ -7,7 +7,7 @@ public class HotbarInventory : MonoBehaviour
 
     public GameObject[] slots;
     public int selectedSlot = 0;
-    private int slotCount = 8;
+    public int slotCount = 8;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -62,7 +62,7 @@ public class HotbarInventory : MonoBehaviour
             UpdateSelection();
         } else if (scroll < -0f)
         {
-            if (selectedSlot == slotCount-1)
+            if (selectedSlot == slotCount)
             {
                 selectedSlot = 0;
             }
@@ -72,6 +72,23 @@ public class HotbarInventory : MonoBehaviour
             }
             UpdateSelection();
 
+        }
+    }
+
+    public void UpdateHotbarUI ()
+    {
+        var items = GameManager.Instance.inventoryManager.GetItems();
+
+        for (int i = 0; i < slotCount; i++)
+        {
+            if (i < items.Count && items[i] != null)
+            {
+                slots[i].GetComponent<HotbarSlot>().ShowItem(items[i]);
+            }
+            else
+            {
+                slots[i].GetComponent<HotbarSlot>().ShowItem(null);
+            }
         }
     }
 }

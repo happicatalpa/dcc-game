@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b22108061db30d2459272bc8ecc03d61, type: 3}
+  m_Name: HealJar
+  m_EditorClassIdentifier: 
+  itemName: HealJar
+  icon: {fileID: 21300000, guid: 3328a059d6056554dbb3765dd8280ea6, type: 3}
+  prefab: {fileID: 1711381541454662762, guid: e1583c267a55f6b41baf796e3b1c93e0, type: 3}
+  type: 1

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b22108061db30d2459272bc8ecc03d61, type: 3}
+  m_Name: JumpJar
+  m_EditorClassIdentifier: 
+  itemName: JumpJar
+  icon: {fileID: 21300000, guid: 0085330b3b052fd449fd75bd57ba2dab, type: 3}
+  prefab: {fileID: 3979798186998607562, guid: 59be6b38b6f25604ab91ba576b46982f, type: 3}
+  type: 1
